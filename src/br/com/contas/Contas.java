@@ -1,16 +1,34 @@
 package br.com.contas;
 
 public class Contas {
- private int Acao;
-   private double NumeroDeAcao=0.0;
-   private double tudo;
+    private double PrecoDoImobiliario;
 
-    public int getAcao() {
-        return Acao;
+    public double getPrecoDoImobiliario() {
+        return PrecoDoImobiliario*NumeroDeAcao;
     }
 
-    public void setAcao(int acao) {
-        Acao = acao;
+    public void setPrecoDoImobiliario(double precoDoImobiliario) {
+        PrecoDoImobiliario = precoDoImobiliario;
+    }
+
+    private double Dividendos;
+   private double NumeroDeAcao=0.0;
+   private double Tudo;
+
+
+
+
+
+
+    public void setPrecoTotal(double precoTotal) {
+    }
+
+    public double getDividendos() {
+        return Dividendos;
+    }
+
+    public void setDividendos(double dividendos) {
+        Dividendos = dividendos;
     }
 
     public double getNumeroDeAcao() {
@@ -22,10 +40,10 @@ public class Contas {
     }
 
     public double getTudo() {
-        return tudo;
+        return Dividendos *NumeroDeAcao;
     }
 
     public void setTudo(double tudo) {
-        this.tudo = tudo;
+        this.Tudo = tudo;
     }
 }
