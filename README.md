@@ -19,11 +19,11 @@ so pra ter uma noçao mesmo
 ![Captura de tela 2023-11-14 220954](https://github.com/ze1pamonha/Contador-De-Dividendos/assets/117956264/c69f6225-d9ef-4003-a5d5-91b4aa96e8e2)
 va a onde foi instalado o arquivo geralmente ira ficar em dowloads abre a linha de comando(cmd) e digite
 
-`javac .\Main.java`
+`javac .\Principal.java`
 
 depois
 
-`java Main`
+`java Principal`
 ![Captura de tela 2023-11-14 221006](https://github.com/ze1pamonha/Contador-De-Dividendos/assets/117956264/eceb43a4-249d-4a6f-ba84-0d5b66b0edd9)
 
 e so usar agora

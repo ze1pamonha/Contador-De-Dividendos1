@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/contadorDeDividendos.iml" filepath="$PROJECT_DIR$/contadorDeDividendos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalculadoraDeDividendos.iml" filepath="$PROJECT_DIR$/CalculadoraDeDividendos.iml" />
     </modules>
   </component>
 </project>
