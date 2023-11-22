@@ -12,7 +12,7 @@ so pra ter uma noçao mesmo
 ## O QUE E PRECISO PRA FUCIONAR?
 
 > [!IMPORTANT]
-> java 17 instalado
+> jdk 17 instalado
 
 
 ### COMO EXECUTAR:
