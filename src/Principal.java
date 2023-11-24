@@ -34,17 +34,18 @@ public class Principal {
                     if (opcao==1){
                         //explemplo: se uma açao custa 8,00 e ela retorna 0,06 centavos com 900 açoes ela daria 	54,00 rais por mes
                         //entao vai calcular o preço da açao e o retorno vai pegar um tanto de açao 900 voltaria um tanto
+                        //vai calcular se voce tiver um tanto de açao qunto ela ira dar de retorno e quanto voce precisa apar comprar essas açao
                         System.out.println("qual o preço do fundo imobiliario?");
                         contas.setPrecoDoImobiliario(leitura.nextDouble());
 
-                        System.out.println("quantas fundos imobiliarios?");
+                        System.out.println("quantos fundos imobiliarios?");
                         contas.setNumeroDeAcao(leitura.nextInt());
                         ;
                         System.out.println("quanto de dividendos?");
                         contas.setDividendos(leitura.nextDouble());
 
 
-                        System.out.println("ao todo com "+contas.getDividendos()+" de dividendos" +" e com "+contas.getNumeroDeAcao()+" de dividendos ao mes" +" \nao todo deu " +contas.getTudo()+" reais por mes");
+                        System.out.println("ao todo com "+contas.getDividendos()+" de dividendos" +" e com "+contas.getNumeroDeAcao()+" de dividendos ao mes" +" \nao todo deu " +Math.floor(contas.getTudo())+" reais por mes");
                         System.out.println("voce iria precisar de "+new DecimalFormat(".0").format(contas.getPrecoDoImobiliario()));
 
 
@@ -52,18 +53,19 @@ public class Principal {
 
 //completado essa area
                         //suponhamos que voce teria uma certa quantia e queira comprar tudo e uma so açao isso mostraria quantas açao teria com esse valor
-                        System.out.println("qual o valor do fundo");
-                        contas.setValor(leitura.nextDouble());
-
 
                         System.out.println("quanto voce teria?");
+                        contas.setValor(leitura.nextDouble());
+
+                        System.out.println("qual o valor do fundo");
                         contas.setFundo(leitura.nextDouble());
-                        int soma= (int) (contas.getFundo()/contas.getValor());
+
+                        double soma= contas.getValor()/contas.getFundo();
                         System.out.println( "\n" +
                                 "Se você tem "+contas.getValor()+" e deseja comprar ações que custam "+contas.getFundo()+" cada ");
 
-                        System.out.println(" voce teria comprado "+Math.floor(soma)+" de fundos imobiliarios");
-                        return;
+                        System.out.println(" voce teria comprado "+Math.floor(soma)  +" de fundos imobiliarios");
+
 
 
                     } else if (opcao==3) {
@@ -71,7 +73,7 @@ public class Principal {
                         System.out.println("qual e o valor desejado dos dividendos alcançara?");
                         contas.setValor(leitura.nextDouble());
 
-                        System.out.println("qunato que o fundo da de retorno?");
+                        System.out.println("quanto que o fundo da de retorno?");
                         contas.setDividendos(leitura.nextDouble());
 
 
@@ -80,7 +82,7 @@ public class Principal {
                         System.out.println(" voce precisaria no total de "+Math.floor(soma)+" fundos para ter o valor de dividendos por mes de "+Math.floor(contas.getValor()));
 
                     } else if (opcao==4) {
-break;
+                     break;
                     }
 
                 }
