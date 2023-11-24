@@ -7,8 +7,8 @@ public class Principal {
         Scanner leitura=new Scanner(System.in);
         Contas contas=new Contas();
 
-        int enquanto=0;
-        int opcao=12;
+
+        int opcao;
 
         System.out.println("se deseja continuar aperte 1 se deseja parar aperte qual quer numero ou didite 4 nao faz diferença");
             opcao= leitura.nextInt();
@@ -17,7 +17,7 @@ public class Principal {
             //completado essa area
             if (opcao==1){
 
-                while (enquanto>=0){
+                while (true){
 
 
 
@@ -40,7 +40,7 @@ public class Principal {
 
                         System.out.println("quantos fundos imobiliarios?");
                         contas.setNumeroDeAcao(leitura.nextInt());
-                        ;
+
                         System.out.println("quanto de dividendos?");
                         contas.setDividendos(leitura.nextDouble());
 
